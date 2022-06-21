@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/9af12d9834.js" crossorigin="anonymous"></script>
+  <title>Urna Eletrônica</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="bordaEsq"></div>
+    <!--Div utilizada para de efeito de curva na urna-->
+    <div class="urna">
+      <div class="dados">
+        <!--Parte do visor/tela da Urna-->
+        <div class="visor">
+          <div class="fim-votacao">
+            <h1>FIM</h1>
+            <span>VOTOU</span>
+          </div>
+          <div class="visor-container ativo">
+            <div class="visor-dados">
+              <h2>SEU VOTO PARA</h2>
+              <h4>Presidente da Republica</h4>
+              <!-- Opção case vote em branco -->
+              <div class="visor-votoBranco">
+                <p class="voto-branco-p">VOTO ERRADO</p>
+                <h1>VOTO NULO</h1>
+              </div>
+              <!--Parte onde vai digitar o numero da opção-->
+              <div class="visor-opcao ativoN">
+                <p>Número: </p>
+                <div class="visor-numero">
+                  <div class="visor-numOP"><span></span></div>
+                </div>
+              </div>
+              <!--Parte onde irá aparecer o nome do candidato-->
+              <div class="visor-opcao nome">
+                <p>Nome:</p>
+                <span class="nome-candidato"></span>
+              </div>
+              <!--Parte onde irá aparecer o nome do partido do candidato-->
+              <div class="visor-opcao partido">
+                <p>Partido: </p>
+                <span class="partido-candidado"></span>
+              </div>
+            </div>
+            <div class="visor-imagem">
+              <img alt="Candidato">
+            </div>
+          </div>
+          <!--Rodapé do visor-->
+          <div class="visor-rodape">
+            <h3>Aperte a tecla: </h3>
+            <p><strong>CONFIRMA</strong> para <strong>CONFIRMAR</strong> este voto</p>
+            <p><strong>CORRIGE</strong> para <strong>REINICIAR</strong> este voto</p>
+          </div>
+        </div>
+        <!--Parte do teclado e das opções-->
+        <div class="teclado">
+          <div class="teclado-logo">
+            <img src="img/urna-logo.png" alt="">
+            <span>Justiça <br> Eleitoral</span>
+          </div>
+          <div class="teclado-teclas">
+            <div class="numerais">
+              <button class="numerais-tecla t0 tecla0">0</button>
+              <button class="numerais-tecla tecla1">1</button>
+              <button class="numerais-tecla tecla2">2</button>
+              <button class="numerais-tecla tecla3">3</button>
+              <button class="numerais-tecla tecla4">4</button>
+              <button class="numerais-tecla tecla5">5</button>
+              <button class="numerais-tecla tecla6">6</button>
+              <button class="numerais-tecla tecla7">7</button>
+              <button class="numerais-tecla tecla8">8</button>
+              <button class="numerais-tecla tecla9">9</button>
+            </div>
+            <div class="opcoes">
+              <button class="opcoes-branco">BRANCO</button>
+              <button class="opcoes-corrige">CORRIGE</button>
+              <button class="opcoes-confirma">CONFIRMA</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Pontinhos pretos da urna-->
+      <div class="rodape-urna">
+        <div class="rodape-obj"></div>
+        <div class="rodape-obj"></div>
+        <div class="rodape-obj"></div>
+        <div class="rodape-obj"></div>
+        <div class="rodape-obj"></div>
+        <div class="rodape-obj"></div>
+        <div class="rodape-obj"></div>
+        <div class="rodape-obj"></div>
+        <div class="rodape-obj"></div>
+        <div class="rodape-obj"></div>
+      </div>
+    </div>
+    <div class="bordaDir"></div>
+    <!--Div utilizada para de efeito de curva na urna-->
+  </main>
+  <!--Modal de aviso-->
+  <section>
+    <div class="modal-container">     
+      <div class="modal">
+        <div class="fechar"><i class="fa-solid fa-xmark"></i></div>
+        <p>Para votar em BRANCO
+          o campo de voto deve estar vazio.
+          Aperte CORRIGE para apagar o campo de voto.
+        </p>
+      </div>
+    </div>  
+  </section>
+
+  <script type="module" src="js/script.js"></script>
+</body>
+
+</html>
