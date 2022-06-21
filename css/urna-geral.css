@@ -1,0 +1,18 @@
+.urna {
+  width: 100%;
+  max-width: 1000px;
+  height: 515px;
+  background-color: #dad2c7;
+  border-radius: 4px;
+  border-top: 5px solid rgb(197, 197, 197);
+}
+.dados {
+  height: 95%;
+  background-color: transparent;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-right: 50px;
+  padding-left: 40px;
+}

@@ -7,8 +7,7 @@ export default function votoNulo(){
   visorRodape.classList.add('ativo');
   votoBrancoAviso.classList.add('ativo')
   votoBrancoText.classList.add('ativo')
-  votoBrancoText.classList.remove('desativar')
+  visorNumeral.classList.remove('ativoN')
   visorNumeral.classList.add('desativar')
   branco.disabled = true;
-  
 }

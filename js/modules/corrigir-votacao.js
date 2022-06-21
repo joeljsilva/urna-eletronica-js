@@ -9,6 +9,7 @@ export default function initCorrigirVotacao() {
   const branco = document.querySelector('.opcoes-branco');
   function corrigirVotacao() {
     branco.disabled = false;
+    visorOpcoes[0].classList.add('ativoN')
     visorNumeral.innerText = ''
     teclas.forEach((tecla) => {
       tecla.disabled = false;

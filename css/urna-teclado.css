@@ -1,0 +1,113 @@
+
+/* ESTILO TECLADO */
+.dados .teclado {
+  width: 40%;
+  height: 100%;
+  border-left: 3px solid rgb(197, 197, 197);
+  border-right: 3px solid rgb(197, 197, 197);
+}
+.teclado .teclado-logo {
+  background-color: #f2ede7;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.teclado-logo span {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: #666;
+  text-align: center;
+  font-size: 1.75rem;
+  text-shadow: 0 0 1px black;
+}
+.teclado-teclas {
+  display: grid;
+  height: 80%;
+  background-color: #423d3a;
+}
+.teclado-teclas .numerais {
+  display: grid;
+  grid-template-columns: 70px 70px 70px;
+  gap: 5px 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.numerais-tecla {
+  padding: 10px;
+  color: #fff;
+  background-color: #222;
+  border-bottom: 4px solid #000;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: arial;
+  opacity: .7;
+  text-align: left;
+}
+.numerais-tecla:hover {
+  opacity: 1;
+}
+.numerais-tecla:active {
+  outline: 2px solid #fff;
+}
+.t0 {
+  grid-column: 2/3;
+  grid-row: 4;
+}
+.tecla1 {
+  grid-row: 1;
+  grid-column: 1/2;
+}
+.teclado-teclas .opcoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.opcoes button {
+  padding: 5px 15px 20px 15px ;
+  display: flex;
+  border-radius: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: .8;
+  transition: .2s;
+}
+.opcoes button:hover {
+  opacity: 1;
+}
+.opcoes button:active {
+  outline: 4px solid #000;
+}
+.opcoes-branco {
+  border: none;
+  background-color: #fff;
+  border-bottom: 5px solid #ccc;
+}
+.opcoes-corrige {
+  border: none;
+  background-color: #f39b53;
+  border-bottom: 5px solid #e97312;
+}
+.opcoes-confirma {
+  border: none;
+  background-color: #57d584;
+  border-bottom: 5px solid #3b925a;
+}
+.rodape-urna {
+  width: 100%;
+  height: 25px;
+  background: linear-gradient(to top, rgb(204, 203, 203), rgb(206, 204, 204));
+  display: flex;
+  justify-content: space-around;
+}
+.rodape-obj {
+  height: 25px;
+  width: 10px;
+  background: linear-gradient(to top, #000, darkgray);
+}
