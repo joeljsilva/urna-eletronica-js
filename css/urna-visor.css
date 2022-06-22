@@ -92,6 +92,14 @@
   }
 }
 
+@media (max-width: 800px) {
+  .fim-votacao h1 {
+    font-size: 5rem;
+  }
+  .fim-votacao span {
+    font-size: 1rem;
+  }
+}
 .visor-container {
   display: flex;
   justify-content: space-between;
