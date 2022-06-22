@@ -94,11 +94,14 @@
 }
 
 @media (max-width: 800px) {
+  .teclado {
+    max-width: 150px;
+  }
   .teclado-teclas {
-    max-width: 165px;
+    max-width: 145px;
   }
   .teclado-logo {
-    max-width: 165px;
+    max-width: 150px;
     align-items: center;
     gap: 10px;
     justify-content: flex-start;
