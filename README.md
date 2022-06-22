@@ -31,5 +31,9 @@ Ela ainda não está **RESPONSIVA**, então para visualização 100% precisa ser
 <br>
 Porém, eu planejo deixar ela 100% responsiva.
 <br>
+
+## @att - Ela ja está responsiva.
+
+<br>
 Você pode visualizar ela completa e testar pelo link:
 https://joeljsilva.github.io/urna-eletronica-js/
