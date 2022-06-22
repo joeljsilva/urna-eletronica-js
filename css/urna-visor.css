@@ -28,6 +28,30 @@
   font-size: 1rem;
 }
 
+@media (max-width: 1050px) {
+  .visor-votoBranco h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+  }
+  .visor-votoBranco p{
+    display: none;
+    font-weight: bold;
+    font-size: .85rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .visor-votoBranco h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  .visor-votoBranco p{
+    font-size: .55rem;
+  }
+}
+
 @keyframes tituloPiscando {
   0% {
     opacity: 1;
@@ -57,8 +81,17 @@
 .fim-votacao span {
   font-size: 3rem;
   color: rgba(153, 153, 153, 0.6);
-  align-self: flex-end;
 }
+
+@media (max-width: 1050px) {
+  .fim-votacao h1 {
+    font-size: 8rem;
+  }
+  .fim-votacao span {
+    font-size: 2rem;
+  }
+}
+
 .visor-container {
   display: flex;
   justify-content: space-between;
@@ -82,7 +115,8 @@
   height: 100%;
   font-size: 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   color: #333;
 }
@@ -95,6 +129,63 @@
   display: none;
   justify-content: flex-end;
 }
+
+@media (max-width: 1050px) {
+  .visor-opcao {
+    gap: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: .825rem;
+  }
+  .visor-dados h2 {
+    font-size: 1rem;
+  }
+  .visor-dados h4 {
+    font-size: .8rem;
+  }
+  .visor-numero {
+    width: 40px;
+    height: 30px;
+  }
+  .visor-numOP {
+    font-size: 1rem;
+  }
+  .visor-imagem {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 800px) {
+  .visor-dados h2 {
+    font-size: .7rem;
+  }
+  .visor-dados h4 {
+    margin-bottom: 10px;
+    padding-left: 0px;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: .55rem;
+  }
+  .visor-opcao {
+    gap: 10;
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: .6rem;
+  }
+  .visor-numero {
+    width: 25px;
+    height: 20px;
+  }
+  .visor-numOP {
+    font-size: .75rem;
+  }
+  .visor-imagem {
+    width: 80px;
+    height: 80px;
+  }
+}
+
 .visor-rodape {
   margin-top: 30px;
   border-top: 2px solid #333;
@@ -108,4 +199,34 @@
   margin-top: 20px;
   margin-left: 40px;
   font-size: .875rem;
+}
+
+@media (max-width: 1050px) {
+  .visor-rodape {
+    margin-top: 15px;
+  }
+  .visor-rodape h3 {
+    font-size: 1rem;
+    margin: 5px 0 0 10px;
+  }
+  .visor-rodape p {
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .visor-rodape {
+    margin-top: 10px;
+  }
+  .visor-rodape h3 {
+    font-size: .6rem;
+    margin: 10px 0 0 10px;
+  }
+  .visor-rodape p {
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: .6rem;
+  }
 }

@@ -54,3 +54,20 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
+@media (max-width: 1050px) {
+  .modal p {
+    max-width: 220px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .modal {
+    width: 250px
+  }
+  .modal p {
+    max-width: 150pxx;
+    font-size: .8rem;
+  }
+}

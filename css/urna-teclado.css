@@ -1,7 +1,7 @@
 
 /* ESTILO TECLADO */
 .dados .teclado {
-  width: 40%;
+  width: 45%;
   height: 100%;
   border-left: 3px solid rgb(197, 197, 197);
   border-right: 3px solid rgb(197, 197, 197);
@@ -67,8 +67,64 @@
   justify-content: center;
   gap: 10px;
 }
+
+@media (max-width: 1050px) {
+  .teclado-logo img {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+  }
+  .teclado-logo span {
+    font-size: 1.2rem;
+  }
+  .teclado-teclas .numerais {
+    grid-template-columns: 60px 60px 60px;
+    gap: 5px 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .numerais-tecla {
+    padding: 4px;
+    font-size: 1rem;
+  }
+  .teclado-teclas {
+    width: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .teclado-teclas {
+    max-width: 165px;
+  }
+  .teclado-logo {
+    max-width: 165px;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+  .teclado-logo img {
+    width: 30px;
+    height: 30px;
+    margin-left: 0px;
+  }
+  .teclado-logo span {
+    font-size: .8rem;
+  }
+  .teclado-teclas .numerais {
+    display: grid;
+    grid-template-columns: 35px 35px 35px;
+    gap: 8px;
+    margin-top: 20px;
+  }
+  .numerais-tecla {
+    padding: 2px;
+    font-size: .5rem;
+  }
+}
+
 .opcoes button {
-  padding: 5px 15px 20px 15px ;
+  padding: 5px 15px 20px 15px;
   display: flex;
   border-radius: 2px;
   font-family: Arial, Helvetica, sans-serif;
@@ -99,15 +155,46 @@
   background-color: #57d584;
   border-bottom: 5px solid #3b925a;
 }
+
+@media (max-width: 1050px) {
+  .opcoes {
+    margin-left: 10px;
+  }
+  .opcoes button {
+    padding: 3px 8px 15px 8px;
+  }
+}
+@media (max-width: 800px) {
+  .opcoes {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+  }
+  .opcoes button {
+    padding: 2px 4px 8px 4px;
+    font-size: .4rem;
+    opacity: 1;
+  }
+}
 .rodape-urna {
   width: 100%;
-  height: 25px;
+  height: 20px;
   background: linear-gradient(to top, rgb(204, 203, 203), rgb(206, 204, 204));
   display: flex;
   justify-content: space-around;
 }
 .rodape-obj {
-  height: 25px;
+  height: 20px;
   width: 10px;
   background: linear-gradient(to top, #000, darkgray);
+}
+
+@media (max-width: 800px) {
+  .rodape-urna {
+    height: 10px;
+  }
+  .rodape-obj {
+    height: 11px;
+    width: 5px;
+  }
 }

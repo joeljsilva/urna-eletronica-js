@@ -12,7 +12,29 @@
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
   padding-right: 50px;
   padding-left: 40px;
+}
+
+@media (max-width: 1050px) {
+  .urna {
+    max-width: 800px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 800px) {
+  .urna {
+    max-width: 390px;
+    height: 250px;
+  }
+  .container {
+    max-width: 390px;
+  }
+  .dados {
+    max-width: 390px;
+    gap: 0px;
+    padding: 5px 5px;
+  }
 }
